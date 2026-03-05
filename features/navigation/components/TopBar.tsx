@@ -1,7 +1,7 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import { Search01Icon, Bell01Icon, Menu01Icon } from '@hugeicons/react';
+import { Search01Icon, Bell01Icon, Menu01Icon, X01Icon } from '@hugeicons/react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
@@ -13,7 +13,7 @@ import {
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { AppSidebar } from './AppSidebar';
+import { MobileSidebarNav } from './MobileSidebarNav';
 
 function BreadcrumbNav() {
   const pathname = usePathname();
@@ -80,7 +80,7 @@ export function TopBar() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-64 p-0 border-l border-border">
-                <AppSidebar />
+                <MobileSidebarNav />
               </SheetContent>
             </Sheet>
 
