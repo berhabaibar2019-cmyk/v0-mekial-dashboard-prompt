@@ -3,10 +3,10 @@
 import { motion } from 'framer-motion';
 import { fadeUp, staggerContainer } from '@/lib/animations';
 import {
-  ShoppingCart02Icon,
-  Package01Icon,
-  Settings01Icon,
-  Plus01Icon,
+  ShoppingCart,
+  Package,
+  Settings,
+  Plus,
 } from '@hugeicons/react';
 import { Button } from '@/components/ui/button';
 
@@ -14,25 +14,25 @@ const QUICK_ACTIONS = [
   {
     id: '1',
     label: 'بيع جديد',
-    icon: ShoppingCart02Icon,
+    icon: ShoppingCart,
     color: 'bg-blue-500/10 text-blue-600 hover:bg-blue-500/20',
   },
   {
     id: '2',
     label: 'إضافة مخزون',
-    icon: Package01Icon,
+    icon: Package,
     color: 'bg-green-500/10 text-green-600 hover:bg-green-500/20',
   },
   {
     id: '3',
     label: 'إنشاء فاتورة',
-    icon: Plus01Icon,
+    icon: Plus,
     color: 'bg-purple-500/10 text-purple-600 hover:bg-purple-500/20',
   },
   {
     id: '4',
     label: 'تقرير سريع',
-    icon: Settings01Icon,
+    icon: Settings,
     color: 'bg-orange-500/10 text-orange-600 hover:bg-orange-500/20',
   },
 ];

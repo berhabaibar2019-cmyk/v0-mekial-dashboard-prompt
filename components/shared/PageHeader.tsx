@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { sectionVariants } from '@/lib/animations';
-import { ArrowLeft01Icon } from '@hugeicons/react';
+import { ArrowLeft } from '@hugeicons/react';
 
 interface PageHeaderProps {
   title: string;
@@ -35,7 +35,7 @@ export function PageHeader({
               transition={{ duration: 0.3, delay: idx * 0.05 }}
               className="flex items-center gap-2 whitespace-nowrap"
             >
-              {idx > 0 && <ArrowLeft01Icon size={16} />}
+              {idx > 0 && <ArrowLeft size={16} />}
               <span>{crumb}</span>
             </motion.div>
           ))}

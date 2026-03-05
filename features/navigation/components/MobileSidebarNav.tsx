@@ -3,14 +3,15 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
-  ShoppingCart02Icon,
-  Package01Icon,
-  ShoppingBag02Icon,
-  Coins01Icon,
-  Building02Icon,
-  BarChartSquare02Icon,
-  Settings01Icon,
-  Puzzle01Icon,
+  ShoppingCart,
+  Package,
+  ShoppingBag,
+  Coins,
+  Building,
+  BarChart,
+  Settings,
+  Puzzle,
+  Menu,
 } from '@hugeicons/react';
 import { cn } from '@/lib/utils';
 import { LogoIcon } from '@/components/shared/LogoIcon';
@@ -22,7 +23,7 @@ const NAV_GROUPS = [
       {
         label: 'لوحة التحكم',
         href: '/dashboard',
-        icon: <ShoppingCart02Icon size={20} />,
+        icon: <Menu size={20} />,
       },
     ],
   },
@@ -32,17 +33,17 @@ const NAV_GROUPS = [
       {
         label: 'نقطة البيع',
         href: '/dashboard/pos',
-        icon: <ShoppingCart02Icon size={20} />,
+        icon: <ShoppingCart size={20} />,
       },
       {
         label: 'المخزون',
         href: '/dashboard/inventory',
-        icon: <Package01Icon size={20} />,
+        icon: <Package size={20} />,
       },
       {
         label: 'المشتريات',
         href: '/dashboard/purchases',
-        icon: <ShoppingBag02Icon size={20} />,
+        icon: <ShoppingBag size={20} />,
       },
     ],
   },
@@ -52,12 +53,12 @@ const NAV_GROUPS = [
       {
         label: 'المحاسبة',
         href: '/dashboard/accounting',
-        icon: <Coins01Icon size={20} />,
+        icon: <Coins size={20} />,
       },
       {
         label: 'التقارير',
         href: '/dashboard/reports',
-        icon: <BarChartSquare02Icon size={20} />,
+        icon: <BarChart size={20} />,
       },
     ],
   },
@@ -67,17 +68,17 @@ const NAV_GROUPS = [
       {
         label: 'الفروع',
         href: '/dashboard/branches',
-        icon: <Building02Icon size={20} />,
+        icon: <Building size={20} />,
       },
       {
         label: 'المتجر الإضافي',
         href: '/dashboard/marketplace',
-        icon: <Puzzle01Icon size={20} />,
+        icon: <Puzzle size={20} />,
       },
       {
         label: 'الإعدادات',
         href: '/dashboard/settings',
-        icon: <Settings01Icon size={20} />,
+        icon: <Settings size={20} />,
       },
     ],
   },

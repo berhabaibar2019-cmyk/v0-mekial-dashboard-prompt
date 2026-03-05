@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { fadeUp } from '@/lib/animations';
-import { TrendingUp02Icon, TrendingDown02Icon } from '@hugeicons/react';
+import { ArrowUp, ArrowDown } from '@hugeicons/react';
 import { KPI } from '../types/dashboard';
 
 interface KpiCardProps {
@@ -30,9 +30,9 @@ export function KpiCard({ kpi, index }: KpiCardProps) {
 
         <div className={`flex items-center gap-1 px-2 py-1 rounded-md ${trendBgColor}`}>
           {kpi.trend === 'up' ? (
-            <TrendingUp02Icon size={16} className={trendColor} />
+            <ArrowUp size={16} className={trendColor} />
           ) : (
-            <TrendingDown02Icon size={16} className={trendColor} />
+            <ArrowDown size={16} className={trendColor} />
           )}
           <span className={`text-xs font-semibold ${trendColor}`}>
             {Math.abs(kpi.change)}%

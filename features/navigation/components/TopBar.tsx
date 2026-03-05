@@ -1,7 +1,7 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import { Search01Icon, Bell01Icon, Menu01Icon, X01Icon } from '@hugeicons/react';
+import { Search, Bell, Menu, X } from '@hugeicons/react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
@@ -76,7 +76,7 @@ export function TopBar() {
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="sm" className="md:hidden">
-                  <Menu01Icon size={20} />
+                  <Menu size={20} />
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-64 p-0 border-l border-border">
@@ -102,7 +102,7 @@ export function TopBar() {
             transition={{ duration: 0.3 }}
             className="hidden sm:flex items-center gap-2 relative"
           >
-            <Search01Icon
+            <Search
               size={16}
               className="absolute start-3 text-muted-foreground pointer-events-none"
             />
@@ -121,7 +121,7 @@ export function TopBar() {
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Button variant="ghost" size="sm" className="relative">
-                    <Bell01Icon size={18} />
+                    <Bell size={18} />
                     <span className="absolute top-1 end-1 w-2 h-2 rounded-full bg-red-500" />
                   </Button>
                 </TooltipTrigger>

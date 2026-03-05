@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { fadeUp } from '@/lib/animations';
-import { AlertTriangle01Icon, Close01Icon } from '@hugeicons/react';
+import { AlertTriangle, Close } from '@hugeicons/react';
 import { useState } from 'react';
 
 const LOW_STOCK_ITEMS = [
@@ -36,7 +36,7 @@ export function LowStockAlert() {
     >
       <div className="flex items-start justify-between gap-4">
         <div className="flex items-start gap-3 flex-1">
-          <AlertTriangle01Icon
+          <AlertTriangle
             size={20}
             className="text-yellow-600 mt-0.5 flex-shrink-0"
           />
@@ -62,7 +62,7 @@ export function LowStockAlert() {
           onClick={() => setIsVisible(false)}
           className="text-yellow-600 hover:text-yellow-700 flex-shrink-0"
         >
-          <Close01Icon size={18} />
+          <Close size={18} />
         </motion.button>
       </div>
     </motion.div>

@@ -2,7 +2,7 @@
 
 import { PageHeader } from '@/components/shared/PageHeader';
 import { Button } from '@/components/ui/button';
-import { Plus01Icon } from '@hugeicons/react';
+import { Plus } from '@hugeicons/react';
 
 export default function BranchesPage() {
   return (
@@ -12,7 +12,7 @@ export default function BranchesPage() {
         subtitle="إدارة فروع المتجر والمستودعات"
         action={
           <Button className="gap-2 bg-accent text-accent-foreground hover:bg-accent/90">
-            <Plus01Icon size={18} />
+            <Plus size={18} />
             فرع جديد
           </Button>
         }

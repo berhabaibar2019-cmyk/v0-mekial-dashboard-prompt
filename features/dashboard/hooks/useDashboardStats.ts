@@ -1,10 +1,10 @@
 import { useQuery } from '@tanstack/react-query';
 import { DashboardStats } from '../types/dashboard';
 import {
-  TrendingUp01Icon,
-  ShoppingCart02Icon,
-  Package01Icon,
-  Coins01Icon,
+  TrendingUp,
+  ShoppingCart,
+  Package,
+  Coins,
 } from '@hugeicons/react';
 
 const MOCK_DASHBOARD_DATA: DashboardStats = {
@@ -15,7 +15,7 @@ const MOCK_DASHBOARD_DATA: DashboardStats = {
       value: 45230,
       change: 12.5,
       trend: 'up',
-      icon: <ShoppingCart02Icon size={24} />,
+      icon: <ShoppingCart size={24} />,
     },
     {
       id: '2',
@@ -23,7 +23,7 @@ const MOCK_DASHBOARD_DATA: DashboardStats = {
       value: 1240,
       change: 8.2,
       trend: 'up',
-      icon: <Coins01Icon size={24} />,
+      icon: <Coins size={24} />,
     },
     {
       id: '3',
@@ -31,7 +31,7 @@ const MOCK_DASHBOARD_DATA: DashboardStats = {
       value: 3458,
       change: -2.1,
       trend: 'down',
-      icon: <Package01Icon size={24} />,
+      icon: <Package size={24} />,
     },
     {
       id: '4',
@@ -39,7 +39,7 @@ const MOCK_DASHBOARD_DATA: DashboardStats = {
       value: 24.8,
       change: 5.3,
       trend: 'up',
-      icon: <TrendingUp01Icon size={24} />,
+      icon: <TrendingUp size={24} />,
     },
   ],
   recentTransactions: [

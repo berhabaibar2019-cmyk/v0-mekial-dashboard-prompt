@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { fadeUp } from '@/lib/animations';
-import { Star02Icon, Check01Icon } from '@hugeicons/react';
+import { Star, Check } from '@hugeicons/react';
 import { Button } from '@/components/ui/button';
 import { Plugin } from '../types/plugin';
 import { useState } from 'react';
@@ -46,7 +46,7 @@ export function PluginCard({ plugin, index }: PluginCardProps) {
             animate={{ scale: 1 }}
             className="w-8 h-8 rounded-full bg-green-500/10 flex items-center justify-center text-green-600"
           >
-            <Check01Icon size={18} />
+            <Check size={18} />
           </motion.div>
         )}
       </div>
@@ -70,7 +70,7 @@ export function PluginCard({ plugin, index }: PluginCardProps) {
       <div className="flex items-center gap-2 mb-6">
         <div className="flex items-center gap-1">
           {[...Array(5)].map((_, i) => (
-            <Star02Icon
+            <Star
               key={i}
               size={14}
               className={i < Math.floor(plugin.rating) ? 'fill-accent text-accent' : 'text-muted'}

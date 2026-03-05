@@ -6,7 +6,7 @@ import { PageHeader } from '@/components/shared/PageHeader';
 import { PluginCard } from './PluginCard';
 import { PLUGINS } from '../data/plugins';
 import { Input } from '@/components/ui/input';
-import { Search01Icon } from '@hugeicons/react';
+import { Search } from '@hugeicons/react';
 import { useState } from 'react';
 
 export function MarketplacePage() {
@@ -39,7 +39,7 @@ export function MarketplacePage() {
         transition={{ duration: 0.3, delay: 0.1 }}
         className="relative"
       >
-        <Search01Icon
+        <Search
           size={18}
           className="absolute start-3 top-1/2 -translate-y-1/2 text-muted-foreground pointer-events-none"
         />
