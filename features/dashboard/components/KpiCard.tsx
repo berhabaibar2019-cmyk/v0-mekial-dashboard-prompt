@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { fadeUp } from '@/lib/animations';
-import { ArrowUp, ArrowDown } from '@hugeicons/react';
+import { ArrowUp, ArrowDown } from 'lucide-react';
 import { KPI } from '../types/dashboard';
 
 interface KpiCardProps {

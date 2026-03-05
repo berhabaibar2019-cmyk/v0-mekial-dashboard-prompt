@@ -6,7 +6,7 @@ import { PageHeader } from '@/components/shared/PageHeader';
 import { PluginCard } from './PluginCard';
 import { PLUGINS } from '../data/plugins';
 import { Input } from '@/components/ui/input';
-import { Search } from '@hugeicons/react';
+import { Search } from 'lucide-react';
 import { useState } from 'react';
 
 export function MarketplacePage() {

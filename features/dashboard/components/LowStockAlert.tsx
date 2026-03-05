@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { fadeUp } from '@/lib/animations';
-import { AlertTriangle, Close } from '@hugeicons/react';
+import { AlertTriangle, X } from 'lucide-react';
 import { useState } from 'react';
 
 const LOW_STOCK_ITEMS = [
@@ -62,7 +62,7 @@ export function LowStockAlert() {
           onClick={() => setIsVisible(false)}
           className="text-yellow-600 hover:text-yellow-700 flex-shrink-0"
         >
-          <Close size={18} />
+          <X size={18} />
         </motion.button>
       </div>
     </motion.div>

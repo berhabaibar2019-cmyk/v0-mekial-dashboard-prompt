@@ -2,7 +2,7 @@
 
 import { PageHeader } from '@/components/shared/PageHeader';
 import { Button } from '@/components/ui/button';
-import { Plus } from '@hugeicons/react';
+import { Plus } from 'lucide-react';
 
 export default function AccountingPage() {
   return (

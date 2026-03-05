@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { fadeUp } from '@/lib/animations';
-import { Star, Check } from '@hugeicons/react';
+import { Star, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Plugin } from '../types/plugin';
 import { useState } from 'react';

@@ -9,12 +9,12 @@ import {
   ShoppingBag,
   Coins,
   Building,
-  BarChart,
+  BarChart3,
   Settings,
   Puzzle,
   Menu,
   ChevronRight,
-} from '@hugeicons/react';
+} from 'lucide-react';
 import { SidebarNavItem } from './SidebarNavItem';
 import { Button } from '@/components/ui/button';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
@@ -63,7 +63,7 @@ const NAV_GROUPS = [
       {
         label: 'التقارير',
         href: '/dashboard/reports',
-        icon: <BarChart size={20} />,
+        icon: <BarChart3 size={20} />,
       },
     ],
   },

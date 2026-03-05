@@ -5,7 +5,7 @@ import {
   ShoppingCart,
   Package,
   Coins,
-} from '@hugeicons/react';
+} from 'lucide-react';
 
 const MOCK_DASHBOARD_DATA: DashboardStats = {
   kpis: [

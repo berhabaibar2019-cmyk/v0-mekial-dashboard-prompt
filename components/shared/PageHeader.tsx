@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { sectionVariants } from '@/lib/animations';
-import { ArrowLeft } from '@hugeicons/react';
+import { ArrowLeft } from 'lucide-react';
 
 interface PageHeaderProps {
   title: string;

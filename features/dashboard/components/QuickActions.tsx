@@ -7,7 +7,7 @@ import {
   Package,
   Settings,
   Plus,
-} from '@hugeicons/react';
+} from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const QUICK_ACTIONS = [

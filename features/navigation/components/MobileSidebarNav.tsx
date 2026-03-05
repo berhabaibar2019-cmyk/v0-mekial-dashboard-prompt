@@ -8,11 +8,11 @@ import {
   ShoppingBag,
   Coins,
   Building,
-  BarChart,
+  BarChart3,
   Settings,
   Puzzle,
   Menu,
-} from '@hugeicons/react';
+} from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { LogoIcon } from '@/components/shared/LogoIcon';
 
@@ -58,7 +58,7 @@ const NAV_GROUPS = [
       {
         label: 'التقارير',
         href: '/dashboard/reports',
-        icon: <BarChart size={20} />,
+        icon: <BarChart3 size={20} />,
       },
     ],
   },
